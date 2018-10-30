@@ -60,32 +60,6 @@ a{border-bottom:2px solid transparent;}
 a:hover{border-bottom:2px solid red;}
 ```
 
-## 文档流
-
-- 文档内元素的流动方向。<br>
-  内联元素：从左到右；<br>
-  块级元素：从上到下，每块占一行。
-
-- 块级元素高度由其内部文档流高度总和决定（不一定相等）。<br>内联元素高度与字体有关。（设计师设计字体时有建议行高）。
-
-## 脱离文档流
-
-- 父级元素高度不再受脱离文档流的子元素的高度控制。
-
-1. float
-2. position:fixed;
-3. 绝对定位：
-  - 父元素：position:relative;
-  - 子元素：position：absolute；
-4. 绝对定位是相对于父元素定位，若要通过定位实现居中，可以：<br>top:50%;<br>transform:translateY(-50%);<br>消除自身原本高度带来的不居中。
-   
-#### 居中
-
-1. 块级元素居中：<br>margin-left:auto;<br>margin-right:auto;
-
-2.内联元素居中：<br>给父元素加text-align:center;<br>
-*内联元素是无法设置宽高的，宽高可以用padding代替，或者设dispaly:inline-block*
-
 ## 用css画三角形
 
 利用border画三角形：
