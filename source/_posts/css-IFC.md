@@ -17,6 +17,6 @@ inline formatting content
 
 - img{display：block；}
 
-5. inline-block之间对不齐，可以用flex/float,不要用vertical-align!
+5.内联元素之间对不齐，可以用flex/float,不要用vertical-align!
 
-6. inline-block之间有空隙，用flex/float解决
+6.内联元素之间有空隙，用flex/float解决
