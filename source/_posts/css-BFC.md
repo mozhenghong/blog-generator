@@ -1,6 +1,6 @@
 ---
-title: BFC
-date: 2018-10-30 21:57:16
+title: css-BFC
+date: 2018-10-31 08:00:41
 tags:
 ---
 *BFC(block formatting context):块格式化上下文*
