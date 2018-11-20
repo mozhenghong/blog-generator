@@ -118,9 +118,9 @@ filter() 方法创建一个新数组, 其包含通过所提供函数实现的测
 
 reduce() 方法对累计器和数组中的每个元素（从左到右）应用一个函数，将其简化为单个值。
 
-![]https://upload-images.jianshu.io/upload_images/9617841-7ced352c7780fd92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240(https://upload-images.jianhttps://upload-images.jianshu.io/upload_images/9617841-7ced352c7780fd92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240shu.io/upload_images/9617841-7ced352c7780fd92.png?imageMogr2/auto-orienhttps://upload-images.jianshu.io/upload_images/9617841-7ced352c7780fd92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240t/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/9617841-216d455abd6bd302.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-9. Array.prototype.push
+1. Array.prototype.push
 
 push() 方法将一个或多个元素添加到数组的末尾，并**返回该数组的新长度**。
 
