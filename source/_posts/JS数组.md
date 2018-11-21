@@ -29,32 +29,6 @@ tags:
 
 ![](https://upload-images.jianshu.io/upload_images/9617841-7811060a8850d0c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### 函数声明方法
-
-1. 具名函数
-```
- function f(x,y){
-     return x + y
- }
-```
-2. 匿名函数 + var
-```
- var f
- f = function(x,y){ return x+y }
-```
-3. 具名函数 + var
-```
- var f1 
- f1= function f2(x,y){
-     return x+y
- }
- console.log(f2) // undefined
-```
-4. window.Function + var
-```
- var f
- f = new Function('x','y','return x+y')
-```
 ### Js中数组的本质
 
 - 人类理解：数组就是数据的有序集合
