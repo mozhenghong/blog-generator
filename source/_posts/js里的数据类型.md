@@ -102,9 +102,9 @@ tags:
 `‘keyname’ in obj`
   - in 运算符不能识别哪些对象是自身的 哪些是继承的
 
-- 属性的遍历：for...in循环
+- 遍历：for...in循环
 
-  - for...in循环用来遍历一个对象的全部属性，跳过不可遍历的属性，不仅遍历自身属性，还遍历继承的属性
+  - for...in循环用来遍历一个对象的全部属性，跳过不可遍历的属性，不仅遍历自身属性，还遍历继承的属性,把原型链上可枚举的属性遍历出来。
   ```
   var person={
       name:'xxx',
@@ -115,6 +115,11 @@ tags:
     }
     //name age
     ```
+    - Object.keys(obj)/Object.values(obj)<br>
+    只遍历自身的可枚举属性
+    - Object.getOwnPropertyDescriptor()<br>
+    遍历自身的可枚举属性+不可枚举属性
+
 - typeof运算符
 
 返回一个值的数据类型,特殊的只有两种<br>

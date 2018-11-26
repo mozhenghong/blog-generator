@@ -47,9 +47,38 @@ tags:
 
 ## 调用函数
 
-f.call(asThis, input1,input2)<br>
+- f.call(asThis, input1,input2)<br>
 其中 asThis 会被当做 this<br>
 [input1,input2] 会被当做 arguments
+
+### <font color="red">call/apply/bind</font>
+
+1. call/apply
+    - 改变this值
+    - 操作参数
+    - apply可以以数组形式传值
+
+```
+function print(b,c){
+
+}
+print.call({a:2},'hi','hello')
+print.apply({a:2},['hi','hello'])
+//{a:2}为this，b为‘hi’，c为‘hello’
+```
+2. bind
+    - 切换上下文，第一个参数传this值
+    - 科里化
+    - 返回另一个函数
+
+```
+function fn(b,c){
+
+}
+let curryfn = fn.bind({a:2},'hi')
+curryfn('hello')
+//{a:2}为this，b为‘hi’，c为‘hello’
+```
 
 ## this 和arguments
 

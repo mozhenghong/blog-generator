@@ -50,7 +50,11 @@ forEach()参数必须为一个函数<br>
 
 ![](https://upload-images.jianshu.io/upload_images/9617841-e8c7cd125f9b2e37.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-2. Array.prototype.sort
+- for...of可以遍历数组,得到value
+
+![](https://upload-images.jianshu.io/upload_images/9617841-db503fb1228e3fc1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+1. Array.prototype.sort
 
 sort() 方法对数组的元素进行排序，并返回数组。默认排序顺序是根据字符串Unicode码点。<br>
 <font color="red">sort()是这几个方法中唯一会改变原数组的方法</font><br>
@@ -94,15 +98,17 @@ reduce() 方法对累计器和数组中的每个元素（从左到右）应用�
 
 ![](https://upload-images.jianshu.io/upload_images/9617841-216d455abd6bd302.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-9. Array.prototype.push
+9. Array.prototype.push/Array.prototype.unshift()
 
-push() 方法将一个或多个元素添加到数组的末尾，并**返回该数组的新长度**。
+- push() 方法将一个或多个元素添加到数组的末尾，并**返回该数组的新长度**。
+- unshift()将一个或多个元素添加到数组的开头，并返回该数组的新长度。
 
 ![](https://upload-images.jianshu.io/upload_images/9617841-8b13f339c0ecc379.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-10. Array.prototype.pop
+10. Array.prototype.pop/Array.prototype.shift()
 
-pop()方法从数组中删除最后一个元素，并**返回该元素的值**。此方法更改数组的长度。
+- pop()方法从数组中删除最后一个元素，并**返回该元素的值**。此方法更改数组的长度。
+- shift() 方法从数组中删除第一个元素，并返回该元素的值。此方法更改数组的长度。
 
 ![](https://upload-images.jianshu.io/upload_images/9617841-b83fa79fa9aab7dc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -149,3 +155,15 @@ pop()方法从数组中删除最后一个元素，并**返回该元素的值**�
 - 判断数组里是否所有元素都满足回调。
 
 ![](https://upload-images.jianshu.io/upload_images/9617841-d1fdae4c086933d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+18. Array.prototype.slice()
+
+- 截取数组的一部分,如下[2,3)
+
+![](https://upload-images.jianshu.io/upload_images/9617841-c112cf364a6afb9f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+19. Array.prototype.splice()
+
+- splice()方法通过删除现有元素和/或添加新元素来修改数组,返回被删除的内容。
+
+![](https://upload-images.jianshu.io/upload_images/9617841-795c795e9cc8e0df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
