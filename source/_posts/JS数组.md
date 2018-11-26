@@ -94,7 +94,7 @@ reduce() 方法对累计器和数组中的每个元素（从左到右）应用�
 
 ![](https://upload-images.jianshu.io/upload_images/9617841-216d455abd6bd302.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-1. Array.prototype.push
+9. Array.prototype.push
 
 push() 方法将一个或多个元素添加到数组的末尾，并**返回该数组的新长度**。
 
@@ -105,3 +105,47 @@ push() 方法将一个或多个元素添加到数组的末尾，并**返回该�
 pop()方法从数组中删除最后一个元素，并**返回该元素的值**。此方法更改数组的长度。
 
 ![](https://upload-images.jianshu.io/upload_images/9617841-b83fa79fa9aab7dc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+11. Array.prototype.includes()
+
+- 用来判断一个数组是否包含一个指定的值，根据情况，如果包含则返回 true，否则返回false
+- 第一个参数为需要查找的参数值，第二个参数（可选）表示从哪个位置开始查找，如果值为负数，则整个数组都会被搜索。
+
+![](https://upload-images.jianshu.io/upload_images/9617841-5229cf3ed2d534c5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+12.  Array.prototype.indexOf()
+
+- 返回在数组中可以找到一个给定元素的第一个索引，如果存在，返回这个元素所在的位置；如果不存在，则返回-1.
+- 相当于严格相等===去找是否存在某元素，例如两个对象值一样，但地址不一样，则不会被找到。
+
+![](https://upload-images.jianshu.io/upload_images/9617841-c6ac59398101157e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+13.  Array.prototype.lastIndexOf()
+
+- 返回指定元素（也即有效的 JavaScript 值或变量）在数组中的最后一个的索引，如果不存在则返回 -1。
+
+![](https://upload-images.jianshu.io/upload_images/9617841-a9ff01808ccb62d4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+14.  Array.prototype.find()
+    
+- 返回数组中满足提供的测试函数的第一个元素的值。否则返回 undefined。返回的是找到的值
+
+![](https://upload-images.jianshu.io/upload_images/9617841-cf80ed21f10b4b41.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+15. Array.prototype.findIndex()
+
+- 返回数组中满足提供的测试函数的第一个元素的索引。否则返回-1。返回的是找到的值的位置。
+
+![](https://upload-images.jianshu.io/upload_images/9617841-af07bc56cb96214a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+16. Array.prototype.some()
+
+- 判断数组里是否有任意一个元素满足回调，找到了一个就不再往下执行。 
+
+![](https://upload-images.jianshu.io/upload_images/9617841-01b83341271af7a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+17. Array.prototype.every()
+
+- 判断数组里是否所有元素都满足回调。
+
+![](https://upload-images.jianshu.io/upload_images/9617841-d1fdae4c086933d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
