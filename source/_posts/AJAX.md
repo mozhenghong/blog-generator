@@ -97,7 +97,7 @@ request.send();
 ```
 window.jQuery.ajax=function({url,method,body,headers}){
     //成功就调用 resolve，失败就调用 reject
-    return promise(function(resolve,reject){
+    return new Promise(function(resolve,reject){
         let request = new XMLHttpRequest()
         request.open('method','url')//配置request
         for(key in headers){
