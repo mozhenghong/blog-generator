@@ -79,3 +79,61 @@ request.onreadystatechange = ()=>{
 request.send();
 ```
  
+## AJAX的所有功能
+
+- 客户端的JS发送请求（浏览器上的）
+- 服务端的JS发送响应（Ｎode.js上的）
+- JS 可以设置任意请求 header :
+    - 第一部分 request.open('get', '/xxx')
+    - 第二部分 request.setRequestHeader('content-type','x-www-form-urlencoded')
+    - 第四部分 request.send('a=1&b=2')
+- JS 可以获取任意响应 header :
+    - 第一部分 request.status //200<br> request.statusText//ok
+    - 第二部分 request.getResponseHeader('content-type') / request.getAllResponseHeaders()
+    - 第四部分 request.responseText
+
+## 自己实现AJAX
+
+```
+window.jQuery.ajax=function({url,method,body,headers}){
+    //成功就调用 resolve，失败就调用 reject
+    return promise(function(resolve,reject){
+        let request = new XMLHttpRequest()
+        request.open('method','url')//配置request
+        for(key in headers){
+            let value = headers[key]
+            request.setRequestHeader(key,value)
+        }
+        request.onreadystatechange = ()=>{
+            if(request.readyState===4){
+                if(request.status>=200&&request.status<300){
+                    resolve.call(undefined,request.responseText)
+                }else if(request.status>=400){
+                    reject.call(undefined,request)
+                }
+            }
+        }
+        request.send(body)
+
+    })
+}
+
+//使用AJAX
+button.addEventListener('click',(e)=>{
+    let promise = window.jQuery.ajax({
+        url:'/xxx',
+        method: 'get',
+        headers:{
+            'content-type':'application/x-www-form-urlencoded',
+            'age': '18'
+        }
+    })
+    promise.then(
+        (text)=>{console.log(text)},
+        (request)=>{console.log(request)}
+    )
+})
+
+//=>链式操作
+window.jQuery.ajax().then(success, fail).then(success, fail)
+```
